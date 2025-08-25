@@ -23,4 +23,4 @@ Requirements: Go 1.22+
 
 ## Notes
 
-- Uses Odesli public API (https://api.song.link)
+- Uses Odesli public API (https://linktree.notion.site/API-d0ebe08a5e304a55928405eb682f6741)
