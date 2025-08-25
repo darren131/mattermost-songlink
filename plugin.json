@@ -1,0 +1,33 @@
+{
+  "id": "com.mattermost.songlink",
+  "name": "Songlink (Odesli)",
+  "description": "Smart music links for Mattermost. Slash command and auto-unfurl using Odesli (song.link).",
+  "version": "0.1.0",
+  "min_server_version": "9.0.0",
+  "settings_schema": {
+    "header": "Configure how Songlink behaves in your workspace.",
+    "footer": "Songlink uses the public Odesli API (api.song.link) and does not require an API key.",
+    "settings": [
+      {
+        "key": "AutoUnfurl",
+        "display_name": "Auto-unfurl music links",
+        "type": "bool",
+        "help_text": "When enabled, posts containing supported music links will automatically get a smart link preview from the bot.",
+        "default": true
+      },
+      {
+        "key": "UserCountry",
+        "display_name": "Preferred country code (optional)",
+        "type": "text",
+        "help_text": "Two-letter country code (e.g., US, GB, DE) to localize platform availability.",
+        "default": ""
+      }
+    ]
+  },
+  "server": {
+    "executables": {
+      "linux-amd64": "server/dist/plugin-linux-amd64",
+      "linux-arm64": "server/dist/plugin-linux-arm64"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# Go
+bin/
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+cover/
+
+# Mattermost plugin build artifacts
+dist/
+server/dist/
+
+# IDE/editor
+.vscode/
+.idea/
+*.iml
